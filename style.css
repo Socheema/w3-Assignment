@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans, Roboto;
+}
+
+.wrapper{
+    padding: 0 10%;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 35px 85px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 8px;
+    list-style: none;
+    padding: 8px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: .75rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sign-up{
+    color: #edf2fc;
+    background-color: #07f72f;
+    text-transform: uppercase;
+    padding: 4px 9px;
+    border-radius: 30px;
+    font-size: .7rem;
+    font-weight: 500;
+}
+
+
+nav img{
+    background-color: #07f72f;
+   height: 37px;
+    padding: 8px;
+   
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container img{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+
+}
+
+h1{
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.container p{
+    margin-bottom: 20px;
+    font-size: .6rem;
+    line-height: 16px;
+
+}
+
+.container-item button{
+    background-color: #07f72f;
+    color: #edf2fc;
+    border: none;
+    border-radius: 30px;
+    padding: 5px 10px;
+    font-size: .6rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* ! Media query */
+
+@media screen and (max-width: 400px){
+    nav{
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+   
+    nav ul li{
+        padding: 0;
+        margin-right: 5px;
+    } 
+
+    .wrapper{
+        padding: 0;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .container-item{
+        margin-top: 25px 0 45px;
+    }
+
+    .container img{
+        position: relative;
+        height: 350px;
+    }
+
+}
+
+@media screen and (max-width: 1065px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container img{
+        position: relative;
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .wrapper{
+        padding: 0;
+    }
+    nav{
+        padding: 0;
+    }
+    .container img{
+        height: 350px;
+    }
+}
